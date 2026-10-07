@@ -475,6 +475,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p><strong>Tujuan Platform:</strong> Platform Kukang Riau dibangun semata-mata sebagai sarana edukasi masyarakat dan wadah pelaporan cepat atas penemuan kukang dalam kondisi darurat.</p>
                         <p><strong>Validitas Laporan:</strong> Anda setuju untuk memberikan informasi pelaporan (termasuk foto bukti) yang jujur, akurat, dan dapat dipertanggungjawabkan.</p>
                         <p><strong>Batasan Tanggung Jawab:</strong> Tim rescue akan berupaya merespons setiap laporan dengan secepat mungkin. Namun, waktu respons di lapangan bergantung pada ketersediaan relawan, kondisi cuaca, dan tingkat urgensi.</p>
+                        <p class="pt-2 border-t border-slate-100"><strong>Atribusi:</strong> Ikon favicon Kukang dibuat oleh Magnific dari Flaticon.</p>
                     </div>
                 `,
                 confirmButtonColor: '#059669',
