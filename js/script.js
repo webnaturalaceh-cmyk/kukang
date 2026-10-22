@@ -5,6 +5,7 @@ const translations = {
         nav_loris: "Kukang",
         nav_program: "Program",
         nav_gallery: "Galeri",
+        nav_partners: "Partners",
         nav_lapor: "Lapor!",
         nav_lapor_mobile: "Lapor Kukang Sekarang",
         
@@ -57,6 +58,16 @@ const translations = {
         lapor_title: 'Lapor <span class="text-gradient">Penampakan</span>',
         lapor_desc: 'Bantu kami menyelamatkan kukang. Data pelapor dijamin kerahasiaannya.',
         
+        partners_badge: 'Kolaborasi',
+        partners_title: 'Mitra <span class="text-gradient">Konservasi</span>',
+        partners_desc: 'Bekerja sama dengan institusi pemerintah dan perguruan tinggi dalam mendukung edukasi, riset, serta pelestarian kukang di Kepulauan Riau.',
+        partner1_badge: 'Pemerintah Daerah',
+        partner1_name: 'Pemerintah Kota Batam',
+        partner1_desc: 'Sinergi kebijakan daerah dan instansi pemerintahan dalam sosialisasi perlindungan satwa liar, pengawasan habitat, dan pelestarian lingkungan di Kota Batam.',
+        partner2_badge: 'Perguruan Tinggi & Riset',
+        partner2_name: 'Universitas Maritim Raja Ali Haji (UMRAH)',
+        partner2_desc: 'Kolaborasi riset ilmiah keanekaragaman hayati pesisir, kajian ekologi, serta pelibatan mahasiswa dalam aksi edukasi dan konservasi kukang berkelanjutan.',
+        
         footer_desc: 'Platform kolaborasi antara Akasia Riau dan DierenPark Amersfoort Wildlife Fund yang didedikasikan untuk perlindungan, edukasi, dan pelaporan satwa Kukang di Provinsi Riau.',
         footer_nav: 'NAVIGASI',
         footer_contact: 'KONTAK',
@@ -69,6 +80,7 @@ const translations = {
         nav_loris: "Slow Loris",
         nav_program: "Program",
         nav_gallery: "Gallery",
+        nav_partners: "Partners",
         nav_lapor: "Report!",
         nav_lapor_mobile: "Report a Slow Loris Now",
         
@@ -120,6 +132,16 @@ const translations = {
         
         lapor_title: 'Report <span class="text-gradient">Sighting</span>',
         lapor_desc: 'Help us save slow lorises. Reporter data is guaranteed confidential.',
+        
+        partners_badge: 'Collaboration',
+        partners_title: 'Conservation <span class="text-gradient">Partners</span>',
+        partners_desc: 'Collaborating with government institutions and universities to support education, research, and slow loris conservation in the Riau Islands.',
+        partner1_badge: 'Local Government',
+        partner1_name: 'Pemerintah Kota Batam',
+        partner1_desc: 'Regional policy synergy and government agency collaboration in wildlife protection outreach, habitat monitoring, and environmental conservation in Batam City.',
+        partner2_badge: 'Higher Education & Research',
+        partner2_name: 'Universitas Maritim Raja Ali Haji (UMRAH)',
+        partner2_desc: 'Collaboration in coastal biodiversity research, ecological studies, and student involvement in sustainable slow loris conservation and education initiatives.',
         
         footer_desc: 'A collaborative platform between Akasia Riau and DierenPark Amersfoort Wildlife Fund dedicated to the protection, education, and reporting of Slow Lorises in Riau Province.',
         footer_nav: 'NAVIGATION',
