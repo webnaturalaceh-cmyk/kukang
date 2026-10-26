@@ -49,6 +49,20 @@ const translations = {
         doc2_p1: 'Melalui kegiatan ini, masyarakat diajak mengenal kukang lebih dekat, mulai dari karakteristik, perilaku, hingga ancaman yang dapat membahayakan keberadaannya di alam.',
         doc2_p2: 'Kegiatan edukasi menjadi salah satu langkah untuk meningkatkan kepedulian dan mendorong upaya penyelamatan kukang bersama.',
         doc2_quote: '"Kenali kukangnya, peduli, dan ikut menjaganya tetap di alam."',
+
+        doc3_badge: 'Edukasi Konservasi',
+        doc3_date: '<i class="fa-regular fa-calendar mr-1.5"></i> 21 Okt 2026',
+        doc3_title: 'Edukasi Konservasi Kukang Sumatera di Kelurahan Muka Kuning, Batam',
+        doc3_p1: 'Dilaksanakan di Kelurahan Muka Kuning, Kec. Sei Beduk, Kota Batam bersama pemateri Ibu Karla Amelia, S.Pd., M.Sc., perangkat kelurahan, serta 65 peserta dari kader PKK, Posyandu, dan Pokdarwis.',
+        doc3_p2: 'Melalui edukasi ini, peserta diajak memahami pentingnya konservasi Kukang Sumatera, mengenali ancaman kelestariannya, serta mendorong keterlibatan masyarakat menjaga keanekaragaman hayati dan habitat alaminya.',
+        doc3_quote: '"Kenali, Sayangi, Lindungi." — Akasia Indonesia',
+
+        doc4_badge: 'Literasi & Konservasi',
+        doc4_date: '<i class="fa-regular fa-calendar mr-1.5"></i> 25 Okt 2026',
+        doc4_title: 'Kolaborasi Literasi & Edukasi Pelestarian Kukang Bersama FLP Batam',
+        doc4_p1: 'Memadukan semangat literasi dan kepedulian lingkungan, FLP Batam bersama Akasia Indonesia menggelar kegiatan inspiratif pengenalan Kukang Sumatera dan penjagaan habitat alaminya di Masjid Agung Batam Center.',
+        doc4_p2: 'Melalui kegiatan edukasi interaktif ini, peserta diajak untuk memahami pentingnya konservasi satwa liar serta aktif menyuarakan perlindungan keanekaragaman hayati.',
+        doc4_quote: '"Kepedulian terhadap literasi dan kelestarian alam harus terus disuarakan."',
         
         gal_badge: 'Media Sosial',
         gal_title: 'Galeri <span class="text-gradient">Instagram</span>',
@@ -124,6 +138,20 @@ const translations = {
         doc2_p1: 'Through this activity, the community is invited to get to know the slow loris more closely, starting from its characteristics, behavior, to the threats that can endanger its existence in nature.',
         doc2_p2: 'Educational activities are one of the steps to increase awareness and encourage joint efforts to save the slow loris.',
         doc2_quote: '"Know the slow loris, care for it, and help keep it in nature."',
+
+        doc3_badge: 'Conservation Education',
+        doc3_date: '<i class="fa-regular fa-calendar mr-1.5"></i> Oct 21, 2026',
+        doc3_title: 'Sumatran Slow Loris Conservation Education in Muka Kuning, Batam',
+        doc3_p1: 'Held in Muka Kuning Subdistrict, Sei Beduk District, Batam City with speaker Ms. Karla Amelia, S.Pd., M.Sc., local subdistrict officials, and 65 participants from PKK, Posyandu, and Pokdarwis cadres.',
+        doc3_p2: 'Through this educational session, participants learned the importance of Sumatran Slow Loris conservation, threats to its survival, and active community involvement in protecting biodiversity and natural habitats.',
+        doc3_quote: '"Know It, Love It, Protect It." — Akasia Indonesia',
+
+        doc4_badge: 'Literacy & Conservation',
+        doc4_date: '<i class="fa-regular fa-calendar mr-1.5"></i> Oct 25, 2026',
+        doc4_title: 'Literacy & Slow Loris Conservation Education Collaboration with FLP Batam',
+        doc4_p1: 'Combining the spirit of literacy and environmental care, FLP Batam together with Akasia Indonesia held an inspiring educational session on Sumatran Slow Lorises and habitat protection at the Grand Mosque of Batam Center.',
+        doc4_p2: 'Through this interactive educational activity, participants were invited to understand the importance of wildlife conservation and actively advocate for biodiversity protection.',
+        doc4_quote: '"Care for literacy and nature conservation must continue to be voiced."',
 
         gal_badge: 'Social Media',
         gal_title: 'Instagram <span class="text-gradient">Gallery</span>',
@@ -503,6 +531,86 @@ document.addEventListener('DOMContentLoaded', () => {
                 confirmButtonColor: '#059669',
                 confirmButtonText: 'Saya Setuju'
             });
+        });
+    }
+
+    // 10. Carousel Edukasi Muka Kuning
+    const carousel = document.getElementById('kegiatan-carousel');
+    if (carousel) {
+        const inner = document.getElementById('carousel-inner');
+        const prevBtn = document.getElementById('prev-slide');
+        const nextBtn = document.getElementById('next-slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+        let currentSlide = 0;
+        const totalSlides = 3;
+
+        function updateSlide(index) {
+            currentSlide = index;
+            inner.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            dots.forEach((dot, i) => {
+                if (i === currentSlide) {
+                    dot.classList.remove('bg-white/50');
+                    dot.classList.add('bg-white', 'scale-125');
+                } else {
+                    dot.classList.remove('bg-white', 'scale-125');
+                    dot.classList.add('bg-white/50');
+                }
+            });
+        }
+
+        prevBtn.addEventListener('click', () => {
+            const index = currentSlide > 0 ? currentSlide - 1 : totalSlides - 1;
+            updateSlide(index);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            const index = currentSlide < totalSlides - 1 ? currentSlide + 1 : 0;
+            updateSlide(index);
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => updateSlide(index));
+        });
+    }
+
+    // 11. Carousel Edukasi FLP Batam
+    const flpCarousel = document.getElementById('flp-carousel');
+    if (flpCarousel) {
+        const flpInner = document.getElementById('flp-carousel-inner');
+        const flpPrevBtn = document.getElementById('flp-prev-slide');
+        const flpNextBtn = document.getElementById('flp-next-slide');
+        const flpDots = document.querySelectorAll('.flp-dot');
+        let currentFlpSlide = 0;
+        const totalFlpSlides = 3;
+
+        function updateFlpSlide(index) {
+            currentFlpSlide = index;
+            flpInner.style.transform = `translateX(-${currentFlpSlide * 100}%)`;
+            
+            flpDots.forEach((dot, i) => {
+                if (i === currentFlpSlide) {
+                    dot.classList.remove('bg-white/50');
+                    dot.classList.add('bg-white', 'scale-125');
+                } else {
+                    dot.classList.remove('bg-white', 'scale-125');
+                    dot.classList.add('bg-white/50');
+                }
+            });
+        }
+
+        flpPrevBtn.addEventListener('click', () => {
+            const index = currentFlpSlide > 0 ? currentFlpSlide - 1 : totalFlpSlides - 1;
+            updateFlpSlide(index);
+        });
+
+        flpNextBtn.addEventListener('click', () => {
+            const index = currentFlpSlide < totalFlpSlides - 1 ? currentFlpSlide + 1 : 0;
+            updateFlpSlide(index);
+        });
+
+        flpDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => updateFlpSlide(index));
         });
     }
 });
