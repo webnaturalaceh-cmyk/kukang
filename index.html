@@ -332,7 +332,7 @@
             </div>
 
             <!-- Grid Dokumentasi Kegiatan -->
-            <div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto fade-up">
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto fade-up">
                 
                 <!-- Kartu 1: Edukasi Sekolah -->
                 <div class="bg-white rounded-3xl p-6 md:p-8 shadow-md border border-slate-100 flex flex-col justify-between h-full group">
@@ -384,6 +384,97 @@
                     </div>
                 </div>
 
+                <!-- Kartu 3: Kegiatan Muka Kuning -->
+                <div class="bg-white rounded-3xl p-6 md:p-8 shadow-md border border-slate-100 flex flex-col justify-between h-full group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6 border-b border-slate-100 pb-4">
+                            <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase" data-i18n="doc3_badge">Edukasi Konservasi</span>
+                            <span class="text-sm font-medium text-slate-500" data-i18n="doc3_date"><i class="fa-regular fa-calendar mr-1.5"></i> 21 Okt 2026</span>
+                        </div>
+
+                        <div class="bg-white p-3 shadow-lg rounded-xl transform rotate-1 group-hover:rotate-0 transition duration-300 border border-slate-100 mb-8">
+                            <div class="relative w-full h-56 md:h-64 rounded-lg overflow-hidden group/slider" id="kegiatan-carousel">
+                                <!-- Wrapper Slides -->
+                                <div class="flex transition-transform duration-500 ease-out h-full" id="carousel-inner">
+                                    <img src="photo_kegiatan_konservasi1.jpeg" alt="Edukasi Kukang Muka Kuning 1" class="w-full h-full object-cover flex-shrink-0">
+                                    <img src="photo_kegiatan_konservasi2.jpeg" alt="Edukasi Kukang Muka Kuning 2" class="w-full h-full object-cover flex-shrink-0">
+                                    <img src="photo_kegiatan_konservasi3.jpeg" alt="Edukasi Kukang Muka Kuning 3" class="w-full h-full object-cover flex-shrink-0">
+                                </div>
+                                <!-- Tombol Navigasi -->
+                                <button id="prev-slide" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-brand-600 w-8 h-8 rounded-full flex items-center justify-center opacity-0 group-hover/slider:opacity-100 transition-opacity shadow-md">
+                                    <i class="fa-solid fa-chevron-left text-sm"></i>
+                                </button>
+                                <button id="next-slide" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-brand-600 w-8 h-8 rounded-full flex items-center justify-center opacity-0 group-hover/slider:opacity-100 transition-opacity shadow-md">
+                                    <i class="fa-solid fa-chevron-right text-sm"></i>
+                                </button>
+                                <!-- Indikator Slide -->
+                                <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
+                                    <button class="w-2 h-2 rounded-full bg-white scale-125 transition-all carousel-dot" data-slide="0"></button>
+                                    <button class="w-2 h-2 rounded-full bg-white/50 transition-all carousel-dot" data-slide="1"></button>
+                                    <button class="w-2 h-2 rounded-full bg-white/50 transition-all carousel-dot" data-slide="2"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-slate-800 mb-4 leading-tight" data-i18n="doc3_title">Edukasi Konservasi Kukang Sumatera di Kelurahan Muka Kuning, Batam</h3>
+
+                        <div class="space-y-4 text-slate-600 leading-relaxed text-sm md:text-base">
+                            <p data-i18n="doc3_p1">Dilaksanakan di Kelurahan Muka Kuning, Kec. Sei Beduk, Kota Batam bersama pemateri Ibu Karla Amelia, S.Pd., M.Sc., perangkat kelurahan, serta 65 peserta dari kader PKK, Posyandu, dan Pokdarwis.</p>
+                            <p data-i18n="doc3_p2">Melalui edukasi ini, peserta diajak memahami pentingnya konservasi Kukang Sumatera, mengenali ancaman kelestariannya, serta mendorong keterlibatan masyarakat menjaga keanekaragaman hayati dan habitat alaminya.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 bg-brand-50 border-l-4 border-brand-500 p-4 rounded-r-lg">
+                        <p class="text-brand-800 font-medium italic" data-i18n="doc3_quote">"Kenali, Sayangi, Lindungi." — Akasia Indonesia</p>
+                    </div>
+                </div>
+
+                <!-- Kartu 4: Literasi & Konservasi FLP Batam -->
+                <div class="bg-white rounded-3xl p-6 md:p-8 shadow-md border border-slate-100 flex flex-col justify-between h-full group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6 border-b border-slate-100 pb-4">
+                            <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase" data-i18n="doc4_badge">Literasi & Konservasi</span>
+                            <span class="text-sm font-medium text-slate-500" data-i18n="doc4_date"><i class="fa-regular fa-calendar mr-1.5"></i> 25 Okt 2026</span>
+                        </div>
+                        
+                        <!-- Carousel Slider Foto FLP -->
+                        <div class="bg-white p-3 shadow-lg rounded-xl transform -rotate-1 group-hover:rotate-0 transition duration-300 border border-slate-100 mb-8">
+                            <div class="relative w-full h-56 md:h-64 rounded-lg overflow-hidden group/slider" id="flp-carousel">
+                                <!-- Wrapper Slides -->
+                                <div class="flex transition-transform duration-500 ease-out h-full" id="flp-carousel-inner">
+                                    <img src="photo_kegiatan_konservasi4.jpeg" alt="Edukasi Literasi Kukang FLP Batam 1" class="w-full h-full object-cover flex-shrink-0">
+                                    <img src="photo_kegiatan_konservasi5.jpeg" alt="Edukasi Literasi Kukang FLP Batam 2" class="w-full h-full object-cover flex-shrink-0">
+                                    <img src="photo_kegiatan_konservasi6.jpeg" alt="Edukasi Literasi Kukang FLP Batam 3" class="w-full h-full object-cover flex-shrink-0">
+                                </div>
+                                <!-- Tombol Navigasi -->
+                                <button id="flp-prev-slide" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-brand-600 w-8 h-8 rounded-full flex items-center justify-center opacity-0 group-hover/slider:opacity-100 transition-opacity shadow-md">
+                                    <i class="fa-solid fa-chevron-left text-sm"></i>
+                                </button>
+                                <button id="flp-next-slide" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-brand-600 w-8 h-8 rounded-full flex items-center justify-center opacity-0 group-hover/slider:opacity-100 transition-opacity shadow-md">
+                                    <i class="fa-solid fa-chevron-right text-sm"></i>
+                                </button>
+                                <!-- Indikator Slide -->
+                                <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
+                                    <button class="w-2 h-2 rounded-full bg-white scale-125 transition-all flp-dot" data-slide="0"></button>
+                                    <button class="w-2 h-2 rounded-full bg-white/50 transition-all flp-dot" data-slide="1"></button>
+                                    <button class="w-2 h-2 rounded-full bg-white/50 transition-all flp-dot" data-slide="2"></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-slate-800 mb-4 leading-tight" data-i18n="doc4_title">Kolaborasi Literasi & Edukasi Pelestarian Kukang Bersama FLP Batam</h3>
+                        
+                        <div class="space-y-4 text-slate-600 leading-relaxed text-sm md:text-base">
+                            <p data-i18n="doc4_p1">Memadukan semangat literasi dan kepedulian lingkungan, FLP Batam bersama Akasia Indonesia menggelar kegiatan inspiratif pengenalan Kukang Sumatera dan penjagaan habitat alaminya di Masjid Agung Batam Center.</p>
+                            <p data-i18n="doc4_p2">Melalui kegiatan edukasi interaktif ini, peserta diajak untuk memahami pentingnya konservasi satwa liar serta aktif menyuarakan perlindungan keanekaragaman hayati.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 bg-brand-50 border-l-4 border-brand-500 p-4 rounded-r-lg">
+                        <p class="text-brand-800 font-medium italic" data-i18n="doc4_quote">"Kepedulian terhadap literasi dan kelestarian alam harus terus disuarakan."</p>
+                    </div>
+                </div>
+
             </div>
             <div class="mt-14 text-center fade-up">
                 <button id="btn-infografis"
@@ -411,21 +502,42 @@
                 <!-- Post 1 -->
                 <div class="rounded-2xl overflow-hidden shadow-md max-h-[440px] fade-up">
                     <blockquote class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/reel/Dbpz7BVxF1e/" data-instgrm-version="14"
+                        data-instgrm-permalink="https://www.instagram.com/p/De7Ph24TneR/" data-instgrm-version="14"
                         style="background:#FFF; border:0; margin:0; padding:0; width:100%; max-width:400px;">
                     </blockquote>
                 </div>
                 <!-- Post 2 -->
                 <div class="rounded-2xl overflow-hidden shadow-md max-h-[440px] fade-up">
                     <blockquote class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/reel/DeHQbwBTMOw/" data-instgrm-version="14"
+                        data-instgrm-permalink="https://www.instagram.com/p/De6ufu-SbtD/" data-instgrm-version="14"
                         style="background:#FFF; border:0; margin:0; padding:0; width:100%; max-width:400px;">
                     </blockquote>
                 </div>
                 <!-- Post 3 -->
                 <div class="rounded-2xl overflow-hidden shadow-md max-h-[440px] fade-up">
                     <blockquote class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/p/DeCHZPLTpOt/" data-instgrm-version="14"
+                        data-instgrm-permalink="https://www.instagram.com/p/De4YPbiT8cs/" data-instgrm-version="14"
+                        style="background:#FFF; border:0; margin:0; padding:0; width:100%; max-width:400px;">
+                    </blockquote>
+                </div>
+                <!-- Post 4 -->
+                <div class="rounded-2xl overflow-hidden shadow-md max-h-[440px] fade-up">
+                    <blockquote class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/De0YiNTTPW7/" data-instgrm-version="14"
+                        style="background:#FFF; border:0; margin:0; padding:0; width:100%; max-width:400px;">
+                    </blockquote>
+                </div>
+                <!-- Post 5 -->
+                <div class="rounded-2xl overflow-hidden shadow-md max-h-[440px] fade-up">
+                    <blockquote class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/DexjnRAEu-K/" data-instgrm-version="14"
+                        style="background:#FFF; border:0; margin:0; padding:0; width:100%; max-width:400px;">
+                    </blockquote>
+                </div>
+                <!-- Post 6 -->
+                <div class="rounded-2xl overflow-hidden shadow-md max-h-[440px] fade-up">
+                    <blockquote class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/DeuQXzozQ6n/" data-instgrm-version="14"
                         style="background:#FFF; border:0; margin:0; padding:0; width:100%; max-width:400px;">
                     </blockquote>
                 </div>
