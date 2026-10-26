@@ -34,7 +34,6 @@ const translations = {
         prog_c2_list: '<p><strong>Target Sasaran:</strong> Warga desa, pelajar, relawan, pusat komunitas, & pemimpin lokal.</p><p><strong>Alur Program:</strong></p><ol class="list-decimal list-outside ml-4 marker:text-brand-500 space-y-1"><li>Tahap Persiapan & Koordinasi</li><li>Pelaksanaan Edukasi</li><li>Pelatihan Relawan</li><li>Pemantauan & Evaluasi</li></ol>',
         prog_c3_title: 'Dampak & Tujuan',
         prog_c3_list: '<li>Mengurangi tingkat perdagangan dan perburuan ilegal secara signifikan.</li><li>Melindungi dan merawat habitat kukang yang tersisa.</li><li>Membangun jaringan konservasi lokal yang mandiri dan berkelanjutan.</li>',
-        btn_poster: 'Lihat / Unduh Poster Infografis Lengkap',
         
         doc_badge: 'Edukasi Sekolah',
         doc_date: '<i class="fa-regular fa-calendar mr-1.5"></i> 7 Sep 2026',
@@ -86,7 +85,8 @@ const translations = {
         footer_nav: 'NAVIGASI',
         footer_contact: 'KONTAK',
         footer_address: 'Sekretariat: Bumi Indah, Blok D-11, Air Raja, Kec. Tanjung Pinang Timur, Kota Tanjung Pinang, Kepulauan Riau, Indonesia 29125',
-        footer_phone: '+62 822-8589-8726 (Rescue Hotline)'
+        footer_phone: '+62 822-8589-8726 (Rescue Hotline)',
+        footer_email: '<a href="mailto:officeakasia@gmail.com" class="hover:text-brand-400 transition">officeakasia@gmail.com</a>'
     },
     en: {
         nav_home: "Home",
@@ -123,7 +123,6 @@ const translations = {
         prog_c2_list: '<p><strong>Target Audience:</strong> Villagers, students, volunteers, community centers, & local leaders.</p><p><strong>Program Workflow:</strong></p><ol class="list-decimal list-outside ml-4 marker:text-brand-500 space-y-1"><li>Preparation & Coordination</li><li>Education Implementation</li><li>Volunteer Training</li><li>Monitoring & Evaluation</li></ol>',
         prog_c3_title: 'Impact & Goals',
         prog_c3_list: '<li>Significantly reduce illegal trade and poaching rates.</li><li>Protect and care for remaining slow loris habitats.</li><li>Build an independent and sustainable local conservation network.</li>',
-        btn_poster: 'View / Download Complete Infographic Poster',
         
         doc_badge: 'School Education',
         doc_date: '<i class="fa-regular fa-calendar mr-1.5"></i> Sep 7, 2026',
@@ -175,7 +174,8 @@ const translations = {
         footer_nav: 'NAVIGATION',
         footer_contact: 'CONTACT',
         footer_address: 'Secretariat: Bumi Indah, Blok D-11, Air Raja, Kec. Tanjung Pinang Timur, Kota Tanjung Pinang, Kepulauan Riau, Indonesia 29125',
-        footer_phone: '+62 822-8589-8726 (Rescue Hotline)'
+        footer_phone: '+62 822-8589-8726 (Rescue Hotline)',
+        footer_email: '<a href="mailto:officeakasia@gmail.com" class="hover:text-brand-400 transition">officeakasia@gmail.com</a>'
     }
 };
 
@@ -455,37 +455,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
             }, 1500);
-        });
-    }
-
-    // 7. Modal Infografis Poster
-    const btnInfografis = document.getElementById('btn-infografis');
-    if(btnInfografis) {
-        btnInfografis.addEventListener('click', function() {
-            Swal.fire({
-                title: 'Melindungi Kukang Melalui Edukasi Masyarakat',
-                imageUrl: 'program_konservasi.jpeg',
-                imageAlt: 'Infografis Program Konservasi Kukang',
-                width: '100%',
-                imageWidth: '100%',
-                showCloseButton: true,
-                showConfirmButton: true,
-                confirmButtonText: '<i class="fa-solid fa-download mr-2"></i>Unduh Gambar',
-                confirmButtonColor: '#059669',
-                customClass: {
-                    popup: 'max-w-4xl',
-                    image: 'rounded-xl shadow-md border border-slate-100 object-contain max-h-[80vh]'
-                }
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    const link = document.createElement('a');
-                    link.href = 'program_konservasi.jpeg';
-                    link.download = 'Poster_Edukasi_Kukang.jpeg';
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                }
-            });
         });
     }
 
