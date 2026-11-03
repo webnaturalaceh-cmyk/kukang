@@ -36,10 +36,9 @@ const translations = {
         prog_c3_list: '<li>Mengurangi tingkat perdagangan dan perburuan ilegal secara signifikan.</li><li>Melindungi dan merawat habitat kukang yang tersisa.</li><li>Membangun jaringan konservasi lokal yang mandiri dan berkelanjutan.</li>',
         
         doc_badge: 'Edukasi Sekolah',
-        doc_date: '<i class="fa-regular fa-calendar mr-1.5"></i> 7 Sep 2026',
         doc_title: 'Mengenal Satwa Liar Sejak Dini: Edukasi Kukang bersama Siswa SDN 017 Sungai Guntung Hilir',
         doc_p1: 'Mengenal satwa liar sejak dini menjadi salah satu langkah untuk menumbuhkan kepedulian terhadap keberadaannya di alam.',
-        doc_p2: 'Pada 7 September 2026, edukasi mengenai kukang dilaksanakan bersama 10 siswa SDN 017 Sungai Guntung Hilir. Siswa diajak mengenal kukang, habitatnya, serta alasan penting mengapa kukang perlu dilindungi.',
+        doc_p2: 'Edukasi mengenai kukang dilaksanakan bersama 10 siswa SDN 017 Sungai Guntung Hilir. Siswa diajak mengenal kukang, habitatnya, serta alasan penting mengapa kukang perlu dilindungi.',
         doc_quote: '"Jangan menangkap, memelihara, atau memperjualbelikan kukang. Mari bersama menjaga kukang tetap hidup aman di habitat alaminya."',
         
         doc2_badge: 'Edukasi Masyarakat',
@@ -50,18 +49,28 @@ const translations = {
         doc2_quote: '"Kenali kukangnya, peduli, dan ikut menjaganya tetap di alam."',
 
         doc3_badge: 'Edukasi Konservasi',
-        doc3_date: '<i class="fa-regular fa-calendar mr-1.5"></i> 21 Okt 2026',
         doc3_title: 'Edukasi Konservasi Kukang Sumatera di Kelurahan Muka Kuning, Batam',
         doc3_p1: 'Dilaksanakan di Kelurahan Muka Kuning, Kec. Sei Beduk, Kota Batam bersama pemateri Ibu Karla Amelia, S.Pd., M.Sc., perangkat kelurahan, serta 65 peserta dari kader PKK, Posyandu, dan Pokdarwis.',
         doc3_p2: 'Melalui edukasi ini, peserta diajak memahami pentingnya konservasi Kukang Sumatera, mengenali ancaman kelestariannya, serta mendorong keterlibatan masyarakat menjaga keanekaragaman hayati dan habitat alaminya.',
         doc3_quote: '"Kenali, Sayangi, Lindungi." — Akasia Indonesia',
 
         doc4_badge: 'Literasi & Konservasi',
-        doc4_date: '<i class="fa-regular fa-calendar mr-1.5"></i> 25 Okt 2026',
         doc4_title: 'Kolaborasi Literasi & Edukasi Pelestarian Kukang Bersama FLP Batam',
         doc4_p1: 'Memadukan semangat literasi dan kepedulian lingkungan, FLP Batam bersama Akasia Indonesia menggelar kegiatan inspiratif pengenalan Kukang Sumatera dan penjagaan habitat alaminya di Masjid Agung Batam Center.',
         doc4_p2: 'Melalui kegiatan edukasi interaktif ini, peserta diajak untuk memahami pentingnya konservasi satwa liar serta aktif menyuarakan perlindungan keanekaragaman hayati.',
         doc4_quote: '"Kepedulian terhadap literasi dan kelestarian alam harus terus disuarakan."',
+
+        doc5_badge: 'Edukasi Masyarakat',
+        doc5_title: 'Edukasi Konservasi Kukang Sumatera di Kelurahan Tanjung Buntung',
+        doc5_p1: 'Akasia Indonesia menggelar kegiatan edukasi konservasi Kukang Sumatera di Aula Kelurahan Tanjung Buntung, Bengkong, Kota Batam, yang dihadiri oleh Lurah, 51 peserta ibu-ibu PKK, serta ketua RT/RW setempat.',
+        doc5_p2: 'Materi edukasi disampaikan oleh Karla Amelia, S.Pd., M.Sc., untuk meningkatkan pemahaman dan kesadaran masyarakat dalam menjaga kelestarian Kukang Sumatera serta habitat alaminya.',
+        doc5_quote: '"Bersama Melindungi Kukang."',
+
+        doc6_badge: 'Edukasi Sekolah',
+        doc6_title: 'Edukasi Konservasi Kukang Sumatera di Sekolah Dasar Kota Batam',
+        doc6_p1: 'Akasia Indonesia menggelar sosialisasi konservasi di SDN 002 Sagulung, SDN 011 Nongsa, dan SDN 003 Sei Beduk. Kegiatan ini diikuti ratusan siswa serta dihadiri oleh perwakilan Dinas Pendidikan Kota Batam.',
+        doc6_p2: 'Melalui materi interaktif, para siswa diajak mengenali karakteristik, peran ekosistem, serta ancaman terhadap Kukang Sumatera agar terdorong menjadi pahlawan penyelamat hutan tanpa memelihara atau menangkap satwa liar.',
+        doc6_quote: '"Saatnya Kamu Jadi Pahlawan Penyelamat Hutan!"',
         
         gal_badge: 'Media Sosial',
         gal_title: 'Galeri <span class="text-gradient">Instagram</span>',
@@ -125,10 +134,9 @@ const translations = {
         prog_c3_list: '<li>Significantly reduce illegal trade and poaching rates.</li><li>Protect and care for remaining slow loris habitats.</li><li>Build an independent and sustainable local conservation network.</li>',
         
         doc_badge: 'School Education',
-        doc_date: '<i class="fa-regular fa-calendar mr-1.5"></i> Sep 7, 2026',
         doc_title: 'Getting to Know Wildlife Early On: Slow Loris Education with Students of SDN 017 Sungai Guntung Hilir',
         doc_p1: 'Introducing wildlife at an early age is a key step in cultivating care for their existence in nature.',
-        doc_p2: 'On September 7, 2026, slow loris education was carried out with 10 students of SDN 017 Sungai Guntung Hilir. Students were introduced to the slow loris, its habitat, and the important reasons why it needs to be protected.',
+        doc_p2: 'Slow loris education was carried out with 10 students of SDN 017 Sungai Guntung Hilir. Students were introduced to the slow loris, its habitat, and the important reasons why it needs to be protected.',
         doc_quote: '"Do not capture, keep, or trade slow lorises. Let\'s work together to keep slow lorises alive and safe in their natural habitat."',
         
         doc2_badge: 'Community Education',
@@ -139,18 +147,28 @@ const translations = {
         doc2_quote: '"Know the slow loris, care for it, and help keep it in nature."',
 
         doc3_badge: 'Conservation Education',
-        doc3_date: '<i class="fa-regular fa-calendar mr-1.5"></i> Oct 21, 2026',
         doc3_title: 'Sumatran Slow Loris Conservation Education in Muka Kuning, Batam',
         doc3_p1: 'Held in Muka Kuning Subdistrict, Sei Beduk District, Batam City with speaker Ms. Karla Amelia, S.Pd., M.Sc., local subdistrict officials, and 65 participants from PKK, Posyandu, and Pokdarwis cadres.',
         doc3_p2: 'Through this educational session, participants learned the importance of Sumatran Slow Loris conservation, threats to its survival, and active community involvement in protecting biodiversity and natural habitats.',
         doc3_quote: '"Know It, Love It, Protect It." — Akasia Indonesia',
 
         doc4_badge: 'Literacy & Conservation',
-        doc4_date: '<i class="fa-regular fa-calendar mr-1.5"></i> Oct 25, 2026',
         doc4_title: 'Literacy & Slow Loris Conservation Education Collaboration with FLP Batam',
         doc4_p1: 'Combining the spirit of literacy and environmental care, FLP Batam together with Akasia Indonesia held an inspiring educational session on Sumatran Slow Lorises and habitat protection at the Grand Mosque of Batam Center.',
         doc4_p2: 'Through this interactive educational activity, participants were invited to understand the importance of wildlife conservation and actively advocate for biodiversity protection.',
         doc4_quote: '"Care for literacy and nature conservation must continue to be voiced."',
+
+        doc5_badge: 'Community Education',
+        doc5_title: 'Sumatran Slow Loris Conservation Education in Tanjung Buntung Village',
+        doc5_p1: 'Akasia Indonesia held a Sumatran Slow Loris conservation education activity at the Tanjung Buntung Village Hall, Bengkong, Batam City, attended by the Village Head, 51 PKK members, and RT/RW heads.',
+        doc5_p2: 'The educational material was presented by Karla Amelia, S.Pd., M.Sc., to increase community understanding and awareness in preserving the Sumatran Slow Loris and its habitat.',
+        doc5_quote: '"Together Protecting the Slow Loris."',
+
+        doc6_badge: 'School Education',
+        doc6_title: 'Sumatran Slow Loris Conservation Education in Batam Elementary Schools',
+        doc6_p1: 'Akasia Indonesia held conservation outreach sessions at SDN 002 Sagulung, SDN 011 Nongsa, and SDN 003 Sei Beduk, attended by hundreds of students and representatives from the Batam Education Department.',
+        doc6_p2: 'Through interactive learning, students discovered the unique traits, ecosystem roles, and threats facing Sumatran Slow Lorises, inspiring them to protect forest wildlife.',
+        doc6_quote: '"Time to Become a Forest Rescue Hero!"',
 
         gal_badge: 'Social Media',
         gal_title: 'Instagram <span class="text-gradient">Gallery</span>',
@@ -580,6 +598,86 @@ document.addEventListener('DOMContentLoaded', () => {
 
         flpDots.forEach((dot, index) => {
             dot.addEventListener('click', () => updateFlpSlide(index));
+        });
+    }
+
+    // 12. Carousel Edukasi Tanjung Buntung
+    const tbCarousel = document.getElementById('tb-carousel');
+    if (tbCarousel) {
+        const tbInner = document.getElementById('tb-carousel-inner');
+        const tbPrevBtn = document.getElementById('tb-prev-slide');
+        const tbNextBtn = document.getElementById('tb-next-slide');
+        const tbDots = document.querySelectorAll('.tb-dot');
+        let currentTbSlide = 0;
+        const totalTbSlides = 2;
+
+        function updateTbSlide(index) {
+            currentTbSlide = index;
+            tbInner.style.transform = `translateX(-${currentTbSlide * 100}%)`;
+            
+            tbDots.forEach((dot, i) => {
+                if (i === currentTbSlide) {
+                    dot.classList.remove('bg-white/50');
+                    dot.classList.add('bg-white', 'scale-125');
+                } else {
+                    dot.classList.remove('bg-white', 'scale-125');
+                    dot.classList.add('bg-white/50');
+                }
+            });
+        }
+
+        tbPrevBtn.addEventListener('click', () => {
+            const index = currentTbSlide > 0 ? currentTbSlide - 1 : totalTbSlides - 1;
+            updateTbSlide(index);
+        });
+
+        tbNextBtn.addEventListener('click', () => {
+            const index = currentTbSlide < totalTbSlides - 1 ? currentTbSlide + 1 : 0;
+            updateTbSlide(index);
+        });
+
+        tbDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => updateTbSlide(index));
+        });
+    }
+
+    // 13. Carousel Edukasi Sekolah
+    const sekolahCarousel = document.getElementById('sekolah-carousel');
+    if (sekolahCarousel) {
+        const sekolahInner = document.getElementById('sekolah-carousel-inner');
+        const sekolahPrevBtn = document.getElementById('sekolah-prev-slide');
+        const sekolahNextBtn = document.getElementById('sekolah-next-slide');
+        const sekolahDots = document.querySelectorAll('.sekolah-dot');
+        let currentSekolahSlide = 0;
+        const totalSekolahSlides = 4;
+
+        function updateSekolahSlide(index) {
+            currentSekolahSlide = index;
+            sekolahInner.style.transform = `translateX(-${currentSekolahSlide * 100}%)`;
+            
+            sekolahDots.forEach((dot, i) => {
+                if (i === currentSekolahSlide) {
+                    dot.classList.remove('bg-white/50');
+                    dot.classList.add('bg-white', 'scale-125');
+                } else {
+                    dot.classList.remove('bg-white', 'scale-125');
+                    dot.classList.add('bg-white/50');
+                }
+            });
+        }
+
+        sekolahPrevBtn.addEventListener('click', () => {
+            const index = currentSekolahSlide > 0 ? currentSekolahSlide - 1 : totalSekolahSlides - 1;
+            updateSekolahSlide(index);
+        });
+
+        sekolahNextBtn.addEventListener('click', () => {
+            const index = currentSekolahSlide < totalSekolahSlides - 1 ? currentSekolahSlide + 1 : 0;
+            updateSekolahSlide(index);
+        });
+
+        sekolahDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => updateSekolahSlide(index));
         });
     }
 });
