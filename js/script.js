@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        }, { threshold: 0.01, rootMargin: '0px 0px -20px 0px' });
         revealEls.forEach(el => observer.observe(el));
     } else {
         revealEls.forEach(el => el.classList.add('visible'));
