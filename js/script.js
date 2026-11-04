@@ -67,10 +67,22 @@ const translations = {
         doc5_quote: '"Bersama Melindungi Kukang."',
 
         doc6_badge: 'Edukasi Sekolah',
-        doc6_title: 'Edukasi Konservasi Kukang Sumatera di Sekolah Dasar Kota Batam',
-        doc6_p1: 'Akasia Indonesia menggelar sosialisasi konservasi di SDN 002 Sagulung, SDN 011 Nongsa, dan SDN 003 Sei Beduk. Kegiatan ini diikuti ratusan siswa serta dihadiri oleh perwakilan Dinas Pendidikan Kota Batam.',
-        doc6_p2: 'Melalui materi interaktif, para siswa diajak mengenali karakteristik, peran ekosistem, serta ancaman terhadap Kukang Sumatera agar terdorong menjadi pahlawan penyelamat hutan tanpa memelihara atau menangkap satwa liar.',
+        doc6_title: 'Edukasi Konservasi Kukang Sumatera di Tiga Sekolah Dasar Kota Batam',
+        doc6_p1: 'Akasia Indonesia menggelar sosialisasi konservasi Kukang Sumatera di SDN 002 Sagulung (26 siswa kelas VI), SDN 011 Nongsa (32 siswa kelas VI), dan SDN 003 Sei Beduk (85 siswa kelas III–VI), yang turut dihadiri perwakilan Dinas Pendidikan Kota Batam.',
+        doc6_p2: 'Melalui materi interaktif, siswa diajak memahami karakteristik, habitat, peran ekosistem, serta ancaman terhadap Kukang Sumatera agar tergerak menjadi pahlawan penyelamat hutan dan tidak menangkap atau memelihara satwa liar.',
         doc6_quote: '"Saatnya Kamu Jadi Pahlawan Penyelamat Hutan!"',
+
+        doc7_badge: 'Pembentukan Relawan',
+        doc7_title: 'Diskusi & Koordinasi Pembentukan Kelompok Relawan Bersama Mapala Politeknik Negeri Batam',
+        doc7_p1: 'Akasia Indonesia menggelar sesi diskusi dan koordinasi bersama Mapala Politeknik Negeri Batam terkait rencana pembentukan kelompok relawan konservasi.',
+        doc7_p2: 'Inisiatif ini bertujuan untuk membangun jaringan relawan muda yang aktif berpartisipasi dalam pemantauan, edukasi, dan aksi perlindungan Kukang Sumatera di wilayah Batam.',
+        doc7_quote: '"Bersama Membangun Generasi Muda Peduli Konservasi."',
+
+        doc8_badge: 'Koordinasi Instansi',
+        doc8_title: 'Koordinasi Bersama SKW II Batam Terkait Kelompok Relawan Konservasi',
+        doc8_p1: 'Akasia Indonesia bersama Seksi Konservasi Wilayah (SKW) II Batam melaksanakan koordinasi dan konsultasi terkait rencana pembentukan Kelompok Relawan Konservasi Kukang Sumatera.',
+        doc8_p2: 'Melalui kolaborasi ini, diharapkan semakin banyak pihak yang terlibat dalam upaya pelestarian Kukang Sumatera dan perlindungan habitatnya.',
+        doc8_quote: '"Menjaga satwa liar bukan hanya tugas satu pihak, tetapi tanggung jawab kita bersama."',
         
         gal_badge: 'Media Sosial',
         gal_title: 'Galeri <span class="text-gradient">Instagram</span>',
@@ -165,10 +177,22 @@ const translations = {
         doc5_quote: '"Together Protecting the Slow Loris."',
 
         doc6_badge: 'School Education',
-        doc6_title: 'Sumatran Slow Loris Conservation Education in Batam Elementary Schools',
-        doc6_p1: 'Akasia Indonesia held conservation outreach sessions at SDN 002 Sagulung, SDN 011 Nongsa, and SDN 003 Sei Beduk, attended by hundreds of students and representatives from the Batam Education Department.',
-        doc6_p2: 'Through interactive learning, students discovered the unique traits, ecosystem roles, and threats facing Sumatran Slow Lorises, inspiring them to protect forest wildlife.',
+        doc6_title: 'Sumatran Slow Loris Conservation Education in Three Batam Elementary Schools',
+        doc6_p1: 'Akasia Indonesia conducted conservation outreach at SDN 002 Sagulung (26 6th-grade students), SDN 011 Nongsa (32 6th-grade students), and SDN 003 Sei Beduk (85 students grades III–VI), attended by Batam Education Department representatives.',
+        doc6_p2: 'Through interactive sessions, students learned about the characteristics, habitats, ecosystem roles, and threats to Sumatran Slow Lorises, inspiring them to protect forest wildlife.',
         doc6_quote: '"Time to Become a Forest Rescue Hero!"',
+
+        doc7_badge: 'Volunteer Program',
+        doc7_title: 'Discussion & Coordination on Volunteer Group Formation with Mapala Politeknik Negeri Batam',
+        doc7_p1: 'Akasia Indonesia held a discussion and coordination session with Mapala Politeknik Negeri Batam to plan the formation of a conservation volunteer group.',
+        doc7_p2: 'This initiative aims to build a network of young volunteers actively involved in monitoring, education, and protection efforts for Sumatran Slow Lorises in Batam.',
+        doc7_quote: '"Together Building a Young Generation of Conservationists."',
+
+        doc8_badge: 'Institutional Coordination',
+        doc8_title: 'Coordination with SKW II Batam Regarding Conservation Volunteer Group',
+        doc8_p1: 'Akasia Indonesia together with Region II Conservation Section (SKW II) Batam conducted coordination and consultation regarding the formation of the Sumatran Slow Loris Conservation Volunteer Group.',
+        doc8_p2: 'Through this collaboration, it is hoped that more stakeholders will be involved in Sumatran Slow Loris preservation and habitat protection efforts.',
+        doc8_quote: '"Protecting wildlife is not just the duty of one party, but our collective responsibility."',
 
         gal_badge: 'Social Media',
         gal_title: 'Instagram <span class="text-gradient">Gallery</span>',
@@ -641,7 +665,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 13. Carousel Edukasi Sekolah
+    // 13. Carousel Edukasi Sekolah Dasar (6 Slides)
     const sekolahCarousel = document.getElementById('sekolah-carousel');
     if (sekolahCarousel) {
         const sekolahInner = document.getElementById('sekolah-carousel-inner');
@@ -649,7 +673,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const sekolahNextBtn = document.getElementById('sekolah-next-slide');
         const sekolahDots = document.querySelectorAll('.sekolah-dot');
         let currentSekolahSlide = 0;
-        const totalSekolahSlides = 4;
+        const totalSekolahSlides = 6;
 
         function updateSekolahSlide(index) {
             currentSekolahSlide = index;
@@ -678,6 +702,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
         sekolahDots.forEach((dot, index) => {
             dot.addEventListener('click', () => updateSekolahSlide(index));
+        });
+    }
+
+    // 14. Carousel Diskusi Mapala Polibatam
+    const mapalaCarousel = document.getElementById('mapala-carousel');
+    if (mapalaCarousel) {
+        const mapalaInner = document.getElementById('mapala-carousel-inner');
+        const mapalaPrevBtn = document.getElementById('mapala-prev-slide');
+        const mapalaNextBtn = document.getElementById('mapala-next-slide');
+        const mapalaDots = document.querySelectorAll('.mapala-dot');
+        let currentMapalaSlide = 0;
+        const totalMapalaSlides = 2;
+
+        function updateMapalaSlide(index) {
+            currentMapalaSlide = index;
+            mapalaInner.style.transform = `translateX(-${currentMapalaSlide * 100}%)`;
+            
+            mapalaDots.forEach((dot, i) => {
+                if (i === currentMapalaSlide) {
+                    dot.classList.remove('bg-white/50');
+                    dot.classList.add('bg-white', 'scale-125');
+                } else {
+                    dot.classList.remove('bg-white', 'scale-125');
+                    dot.classList.add('bg-white/50');
+                }
+            });
+        }
+
+        mapalaPrevBtn.addEventListener('click', () => {
+            const index = currentMapalaSlide > 0 ? currentMapalaSlide - 1 : totalMapalaSlides - 1;
+            updateMapalaSlide(index);
+        });
+
+        mapalaNextBtn.addEventListener('click', () => {
+            const index = currentMapalaSlide < totalMapalaSlides - 1 ? currentMapalaSlide + 1 : 0;
+            updateMapalaSlide(index);
+        });
+
+        mapalaDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => updateMapalaSlide(index));
         });
     }
 });
