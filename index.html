@@ -515,23 +515,49 @@
                     </div>
                 </div>
 
-                <!-- Kartu 6: Edukasi Sekolah Dasar -->
+                <!-- Kartu 6: Edukasi 3 Sekolah Dasar -->
                 <div class="bg-white rounded-3xl p-6 md:p-8 shadow-md border border-slate-100 flex flex-col justify-between h-full group">
                     <div>
                         <div class="flex items-center justify-between mb-6 border-b border-slate-100 pb-4">
                             <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase" data-i18n="doc6_badge">Edukasi Sekolah</span>
                         </div>
                         
-                        <!-- Carousel Slider Foto Sekolah -->
+                        <!-- Carousel Slider 6 Foto (2 foto per sekolah) -->
                         <div class="bg-white p-3 shadow-lg rounded-xl transform -rotate-1 group-hover:rotate-0 transition duration-300 border border-slate-100 mb-8">
                             <div class="relative w-full h-56 md:h-64 rounded-lg overflow-hidden group/slider" id="sekolah-carousel">
                                 <!-- Wrapper Slides -->
                                 <div class="flex transition-transform duration-500 ease-out h-full" id="sekolah-carousel-inner">
-                                    <img src="photo_kegiatan_konservasi9.jpeg" alt="Edukasi Kukang Sekolah 1" class="w-full h-full object-cover flex-shrink-0">
-                                    <img src="photo_kegiatan_konservasi10.jpeg" alt="Edukasi Kukang Sekolah 2" class="w-full h-full object-cover flex-shrink-0">
-                                    <img src="photo_kegiatan_konservasi11.jpeg" alt="Edukasi Kukang Sekolah 3" class="w-full h-full object-cover flex-shrink-0">
-                                    <img src="photo_kegiatan_konservasi12.jpeg" alt="Edukasi Kukang Sekolah 4" class="w-full h-full object-cover flex-shrink-0">
+                                    <!-- SDN 002 Sagulung -->
+                                    <div class="w-full h-full flex-shrink-0 relative">
+                                        <img src="kegiatan_sdn 002 sagulung1.jpeg" alt="Edukasi SDN 002 Sagulung 1" class="w-full h-full object-cover">
+                                        <span class="absolute top-3 left-3 bg-black/60 text-white text-xs px-2.5 py-1 rounded-md backdrop-blur-sm">SDN 002 Sagulung</span>
+                                    </div>
+                                    <div class="w-full h-full flex-shrink-0 relative">
+                                        <img src="kegiatan_sdn 002 sagulung2.jpeg" alt="Edukasi SDN 002 Sagulung 2" class="w-full h-full object-cover">
+                                        <span class="absolute top-3 left-3 bg-black/60 text-white text-xs px-2.5 py-1 rounded-md backdrop-blur-sm">SDN 002 Sagulung</span>
+                                    </div>
+
+                                    <!-- SDN 011 Nongsa -->
+                                    <div class="w-full h-full flex-shrink-0 relative">
+                                        <img src="kegiatan_sdn 011 nongsa1.jpeg" alt="Edukasi SDN 011 Nongsa 1" class="w-full h-full object-cover">
+                                        <span class="absolute top-3 left-3 bg-black/60 text-white text-xs px-2.5 py-1 rounded-md backdrop-blur-sm">SDN 011 Nongsa</span>
+                                    </div>
+                                    <div class="w-full h-full flex-shrink-0 relative">
+                                        <img src="kegiatan_sdn 011 nongsa2.jpeg" alt="Edukasi SDN 011 Nongsa 2" class="w-full h-full object-cover">
+                                        <span class="absolute top-3 left-3 bg-black/60 text-white text-xs px-2.5 py-1 rounded-md backdrop-blur-sm">SDN 011 Nongsa</span>
+                                    </div>
+
+                                    <!-- SDN 003 Sei Beduk -->
+                                    <div class="w-full h-full flex-shrink-0 relative">
+                                        <img src="kegiatan_sdn 003 sei beduk1.jpeg" alt="Edukasi SDN 003 Sei Beduk 1" class="w-full h-full object-cover">
+                                        <span class="absolute top-3 left-3 bg-black/60 text-white text-xs px-2.5 py-1 rounded-md backdrop-blur-sm">SDN 003 Sei Beduk</span>
+                                    </div>
+                                    <div class="w-full h-full flex-shrink-0 relative">
+                                        <img src="kegiatan_sdn 003 sei beduk2.jpeg" alt="Edukasi SDN 003 Sei Beduk 2" class="w-full h-full object-cover">
+                                        <span class="absolute top-3 left-3 bg-black/60 text-white text-xs px-2.5 py-1 rounded-md backdrop-blur-sm">SDN 003 Sei Beduk</span>
+                                    </div>
                                 </div>
+
                                 <!-- Tombol Navigasi -->
                                 <button id="sekolah-prev-slide" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-brand-600 w-8 h-8 rounded-full flex items-center justify-center opacity-0 group-hover/slider:opacity-100 transition-opacity shadow-md">
                                     <i class="fa-solid fa-chevron-left text-sm"></i>
@@ -539,26 +565,105 @@
                                 <button id="sekolah-next-slide" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-brand-600 w-8 h-8 rounded-full flex items-center justify-center opacity-0 group-hover/slider:opacity-100 transition-opacity shadow-md">
                                     <i class="fa-solid fa-chevron-right text-sm"></i>
                                 </button>
-                                <!-- Indikator Slide -->
-                                <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
+
+                                <!-- Indikator Slide (6 Dots) -->
+                                <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-1.5">
                                     <button class="w-2 h-2 rounded-full bg-white scale-125 transition-all sekolah-dot" data-slide="0"></button>
                                     <button class="w-2 h-2 rounded-full bg-white/50 transition-all sekolah-dot" data-slide="1"></button>
                                     <button class="w-2 h-2 rounded-full bg-white/50 transition-all sekolah-dot" data-slide="2"></button>
                                     <button class="w-2 h-2 rounded-full bg-white/50 transition-all sekolah-dot" data-slide="3"></button>
+                                    <button class="w-2 h-2 rounded-full bg-white/50 transition-all sekolah-dot" data-slide="4"></button>
+                                    <button class="w-2 h-2 rounded-full bg-white/50 transition-all sekolah-dot" data-slide="5"></button>
                                 </div>
                             </div>
                         </div>
                         
-                        <h3 class="text-2xl font-bold text-slate-800 mb-4 leading-tight" data-i18n="doc6_title">Edukasi Konservasi Kukang Sumatera di Sekolah Dasar Kota Batam</h3>
+                        <h3 class="text-2xl font-bold text-slate-800 mb-4 leading-tight" data-i18n="doc6_title">Edukasi Konservasi Kukang Sumatera di Tiga Sekolah Dasar Kota Batam</h3>
                         
                         <div class="space-y-4 text-slate-600 leading-relaxed text-sm md:text-base">
-                            <p data-i18n="doc6_p1">Akasia Indonesia menggelar sosialisasi konservasi di SDN 002 Sagulung, SDN 011 Nongsa, dan SDN 003 Sei Beduk. Kegiatan ini diikuti ratusan siswa serta dihadiri oleh perwakilan Dinas Pendidikan Kota Batam.</p>
-                            <p data-i18n="doc6_p2">Melalui materi interaktif, para siswa diajak mengenali karakteristik, peran ekosistem, serta ancaman terhadap Kukang Sumatera agar terdorong menjadi pahlawan penyelamat hutan tanpa memelihara atau menangkap satwa liar.</p>
+                            <p data-i18n="doc6_p1">Akasia Indonesia menggelar sosialisasi konservasi Kukang Sumatera di SDN 002 Sagulung (26 siswa kelas VI), SDN 011 Nongsa (32 siswa kelas VI), dan SDN 003 Sei Beduk (85 siswa kelas III–VI), yang turut dihadiri perwakilan Dinas Pendidikan Kota Batam.</p>
+                            <p data-i18n="doc6_p2">Melalui materi interaktif, siswa diajak memahami karakteristik, habitat, peran ekosistem, serta ancaman terhadap Kukang Sumatera agar tergerak menjadi pahlawan penyelamat hutan dan tidak menangkap atau memelihara satwa liar.</p>
                         </div>
                     </div>
                     
                     <div class="mt-6 bg-brand-50 border-l-4 border-brand-500 p-4 rounded-r-lg">
                         <p class="text-brand-800 font-medium italic" data-i18n="doc6_quote">"Saatnya Kamu Jadi Pahlawan Penyelamat Hutan!"</p>
+                    </div>
+                </div>
+
+                <!-- Kartu 7: Diskusi & Koordinasi Mapala Polibatam -->
+                <div class="bg-white rounded-3xl p-6 md:p-8 shadow-md border border-slate-100 flex flex-col justify-between h-full group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6 border-b border-slate-100 pb-4">
+                            <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase" data-i18n="doc7_badge">Pembentukan Relawan</span>
+                        </div>
+                        
+                        <!-- Carousel Slider Foto Mapala Polibatam -->
+                        <div class="bg-white p-3 shadow-lg rounded-xl transform rotate-1 group-hover:rotate-0 transition duration-300 border border-slate-100 mb-8">
+                            <div class="relative w-full h-80 md:h-96 rounded-lg overflow-hidden group/slider bg-slate-900" id="mapala-carousel">
+                                <!-- Wrapper Slides -->
+                                <div class="flex transition-transform duration-500 ease-out h-full" id="mapala-carousel-inner">
+                                    <div class="w-full h-full flex-shrink-0 relative flex items-center justify-center overflow-hidden">
+                                        <img src="diskusi_bersama mapala politeknik batam1.jpeg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-60">
+                                        <img src="diskusi_bersama mapala politeknik batam1.jpeg" alt="Koordinasi Mapala Polibatam 1" class="relative z-10 w-full h-full object-contain">
+                                    </div>
+                                    <div class="w-full h-full flex-shrink-0 relative flex items-center justify-center overflow-hidden">
+                                        <img src="diskusi_bersama mapala politeknik batam2.jpeg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-60">
+                                        <img src="diskusi_bersama mapala politeknik batam2.jpeg" alt="Koordinasi Mapala Polibatam 2" class="relative z-10 w-full h-full object-contain">
+                                    </div>
+                                </div>
+                                <!-- Tombol Navigasi -->
+                                <button id="mapala-prev-slide" class="absolute z-20 left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-brand-600 w-8 h-8 rounded-full flex items-center justify-center opacity-0 group-hover/slider:opacity-100 transition-opacity shadow-md">
+                                    <i class="fa-solid fa-chevron-left text-sm"></i>
+                                </button>
+                                <button id="mapala-next-slide" class="absolute z-20 right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-brand-600 w-8 h-8 rounded-full flex items-center justify-center opacity-0 group-hover/slider:opacity-100 transition-opacity shadow-md">
+                                    <i class="fa-solid fa-chevron-right text-sm"></i>
+                                </button>
+                                <!-- Indikator Slide -->
+                                <div class="absolute z-20 bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
+                                    <button class="w-2 h-2 rounded-full bg-white scale-125 transition-all mapala-dot" data-slide="0"></button>
+                                    <button class="w-2 h-2 rounded-full bg-white/50 transition-all mapala-dot" data-slide="1"></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-slate-800 mb-4 leading-tight" data-i18n="doc7_title">Diskusi & Koordinasi Pembentukan Kelompok Relawan Bersama Mapala Politeknik Negeri Batam</h3>
+                        
+                        <div class="space-y-4 text-slate-600 leading-relaxed text-sm md:text-base">
+                            <p data-i18n="doc7_p1">Akasia Indonesia menggelar sesi diskusi dan koordinasi bersama Mapala Politeknik Negeri Batam terkait rencana pembentukan kelompok relawan konservasi.</p>
+                            <p data-i18n="doc7_p2">Inisiatif ini bertujuan untuk membangun jaringan relawan muda yang aktif berpartisipasi dalam pemantauan, edukasi, dan aksi perlindungan Kukang Sumatera di wilayah Batam.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 bg-brand-50 border-l-4 border-brand-500 p-4 rounded-r-lg">
+                        <p class="text-brand-800 font-medium italic" data-i18n="doc7_quote">"Bersama Membangun Generasi Muda Peduli Konservasi."</p>
+                    </div>
+                </div>
+
+                <!-- Kartu 8: Koordinasi SKW II Batam -->
+                <div class="bg-white rounded-3xl p-6 md:p-8 shadow-md border border-slate-100 flex flex-col justify-between h-full group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6 border-b border-slate-100 pb-4">
+                            <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase" data-i18n="doc8_badge">Koordinasi Instansi</span>
+                        </div>
+                        
+                        <!-- Gambar Utama -->
+                        <div class="bg-white p-3 shadow-lg rounded-xl transform -rotate-1 group-hover:rotate-0 transition duration-300 border border-slate-100 mb-8 overflow-hidden">
+                            <div class="w-full h-64 md:h-96 rounded-lg overflow-hidden">
+                                <img src="kegiatan_konsultasi seksi konservasi.jpeg" alt="Koordinasi SKW II Batam" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-slate-800 mb-4 leading-tight" data-i18n="doc8_title">Koordinasi Bersama SKW II Batam Terkait Kelompok Relawan Konservasi</h3>
+                        
+                        <div class="space-y-4 text-slate-600 leading-relaxed text-sm md:text-base">
+                            <p data-i18n="doc8_p1">Akasia Indonesia bersama Seksi Konservasi Wilayah (SKW) II Batam melaksanakan koordinasi dan konsultasi terkait rencana pembentukan Kelompok Relawan Konservasi Kukang Sumatera.</p>
+                            <p data-i18n="doc8_p2">Melalui kolaborasi ini, diharapkan semakin banyak pihak yang terlibat dalam upaya pelestarian Kukang Sumatera dan perlindungan habitatnya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 bg-brand-50 border-l-4 border-brand-500 p-4 rounded-r-lg">
+                        <p class="text-brand-800 font-medium italic" data-i18n="doc8_quote">"Menjaga satwa liar bukan hanya tugas satu pihak, tetapi tanggung jawab kita bersama."</p>
                     </div>
                 </div>
 
